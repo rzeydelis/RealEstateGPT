@@ -1,6 +1,5 @@
 import streamlit as st
-# import chatgpt
-import test as chatgpt
+import chatgpt
 import time
 
 st.title("RealEstateGPT")
