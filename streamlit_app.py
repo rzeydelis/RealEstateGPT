@@ -10,8 +10,9 @@ st.write('Example 1: Give me 1 zip code that is near a big national park and is 
 st.write('Example 2: Give me 1 zip code that is in a historic city and tell me about the city.')
 st.write('Example 3: Give me 5 zip codes that are near a big national park.')
 
+streamlit_analytics.start_tracking()
 input = st.text_input("Please enter a GPT input:")
-print(input)
+streamlit_analytics.stop_tracking()
 get_res = chatgpt.get_response(input)
 zipcode = chatgpt.get_zip_code(get_res)
 response = chatgpt.request_zillow_page(zipcode)
