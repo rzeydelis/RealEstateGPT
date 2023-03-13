@@ -11,6 +11,7 @@ st.write('Example 2: Give me 1 zip code that is in a historic city and tell me a
 st.write('Example 3: Give me 5 zip codes that are near a big national park.')
 
 input = st.text_input("Please enter a GPT input:")
+print(input)
 get_res = chatgpt.get_response(input)
 zipcode = chatgpt.get_zip_code(get_res)
 response = chatgpt.request_zillow_page(zipcode)
