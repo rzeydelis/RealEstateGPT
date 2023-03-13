@@ -22,9 +22,6 @@ zillow_links = chatgpt.return_df(zillow_records)
 st.write(chatgpt.get_assistant_msg(get_res))
 st.write(zillow_links)
 
-st.subheader("Button")
-w4 = st.button("Github")
-st.write(w4)
 
 
 
