@@ -1,6 +1,7 @@
 import streamlit as st
 import chatgpt
 import time
+import streamlit_analytics
 
 st.title("RealEstateGPT")
 num_records = 10
