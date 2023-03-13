@@ -10,7 +10,7 @@ import streamlit as st
 
 # openai.api_key = os.getenv("OPENAI_KEY")
 # openai.api_key = st.write()
-st.write(st.secrets['OPENAI_KEY'])
+openai.api_key = st.write(st.secrets['OPENAI_KEY'])
 
 def get_response(INPUT):
     response = openai.ChatCompletion.create(
