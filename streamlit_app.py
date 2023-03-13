@@ -21,6 +21,7 @@ zillow_links = chatgpt.return_df(zillow_records)
 
 st.write(chatgpt.get_assistant_msg(get_res))
 st.write(zillow_links)
+st.write("Join the discord: https://discord.gg/edaYvDRW")
 
 
 
